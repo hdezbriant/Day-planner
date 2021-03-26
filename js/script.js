@@ -13,10 +13,10 @@ setInterval(showActualTime, 1000);
 //  - based on current time
 // past, present, future classes for colors
 
-var currentHour = moment("13", "H").format("H");
+var currentHour = moment().format("H");
 
 function currentTimeBox() {
-    for (i = 9; i <= 17; i++)
+    for (i = 9; i <= 17; i += 1)
         if (currentHour > i) {
             // console.log('ok');
             $("#hour-" + i).addClass("past");
@@ -32,10 +32,21 @@ function currentTimeBox() {
 
 setInterval(currentTimeBox(), 1000);
 
-// Make buttons work
-//  -write input to localstorage
 
 
+var saveButton = $(".saveBtn");
 
-// Figure out local storage pairs
-//  -
+saveButton.on("click", function(event) {
+    var plannerText = ($(this)).siblings(".description").val();
+    var savedTextKey = ($(this)).parent("div").attr("id");
+    localStorage.setItem(savedTextKey, plannerText);
+});
+
+function showSavedText() {
+    for (var i = 9; i <= 17; i += 1) {
+        var savedText = window.localStorage.getItem("hour-" + [i]);
+        $("#hour-" + [i] + " > textarea").val(savedText);
+    }
+}
+
+showSavedText();
