@@ -25,11 +25,11 @@ the other time blocks.
 [Daniel Carillo](https://github.com/DanCarillo93),\
 [Tyler Abegg](https://github.com/UnDuhDuhSea),\
 [Christian Payan](https://github.com/chrispayan),\
-[Andrew Parsons](https://github.com/tvnames), and\
+[Andrew Parsons](https://github.com/tvnames),\
 [Arvin John Bautista](https://github.com/irvinek01),\
 [Oliver Shi](),\
 [Elvis Lee](),\
-[William Lucht](https://github.com/d606n6k),\
+[William Lucht](https://github.com/d606n6k), and\
 [Javier Perez](https://github.com/eniqma69)  
 
 # You guys are awesome!
